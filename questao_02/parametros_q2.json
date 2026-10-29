@@ -1,0 +1,20 @@
+{
+  "fator_logistico": 1.0,
+  "fator_concorrente_inicial": 1.0,
+  "gamma_cruzada": 0.5,
+  "uplift_base": 0.20,
+  "uplift_max": 0.35,
+  "custo_destaque_pct": 0.05,
+  "razao_minima": 1.0,
+  "valor_residual_pct_custo": 0.0,
+  "desconto_semanal": 0.01,
+  "J_quantis": 40,
+  "urgencia_grid": [0.0, 0.5, 1.0, 2.0, 4.0],
+  "n_cenarios_estimacao": 2000,
+  "n_cenarios_calibracao": 2000,
+  "n_cenarios_validacao": 5000,
+  "percentil_risco": 10,
+  "offset_estimacao": 401,
+  "offset_calibracao": 402,
+  "offset_validacao": 403
+}
