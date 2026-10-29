@@ -21,7 +21,7 @@ Medições reais (pequena/média/grande) em `docs/desempenho.md`.
 | **Greedy semanal** (`greedy.alocar_destaques`) | O(T · N · (J + log N)) | O(T · N) | cálculo do benefício esperado (média sobre J quantis) e ordenação por razão | N muito grande → pré-agregar por categoria. Deixa de ser ótimo se destaques tiverem custos fracionáveis ou interações entre SKUs. |
 | **Monte Carlo — validação** (`monte_carlo.simular_plano`) | O(S · T · N) | O(S · T · N) (choques) + O(S · N) estado | `rng.poisson` + indexação da política `POL[ar, t, estoque]` por semana | S·T·N grande → gerar os choques semana a semana (menos memória, mesma complexidade de tempo). |
 
-## Como a expressão aparece no código
+## Como a expressão aparece no código:
 - **O(G·P·n)** do GA: o `for ger in range(max_geracoes)` chama `_avaliar`, que faz `T.fit[ar, G].sum(1)` — uma matriz P×n por geração.
 - **O(T·E·K·J)** da DP: os dois laços (`for t`, `for k`) e a matriz `vendido` de forma (E+1, J). O `V[t+1]` é reaproveitado por todos os (s, k, j): é onde está a reutilização de subproblemas.
 - **O(S·T·N)** da validação: `for t in range(inst.T)` com operações vetorizadas sobre arrays (S, N).

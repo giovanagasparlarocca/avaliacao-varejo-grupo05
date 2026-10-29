@@ -2,7 +2,7 @@
 
 > O enunciado deixa várias escolhas em aberto (“a modelagem deve ser explicada pelos alunos”). Abaixo está o que foi **assumido** neste rascunho. Cada item é uma decisão do modelo, não um fato dos dados — o grupo deve conferir se concorda e ser capaz de alterá-la.
 
-## Questão 1
+## Questão 1:
 1. **Demanda:** elasticidade constante, `d = demanda_base · m^(−elasticidade)`; vendas `u = min(estoque, round(d))`. `m` é o nível relativo de preço de `niveis_preco_relativos`.
 2. **Caixa operacional = margem de contribuição:** `u · (p·(1−taxa_marketplace) − custo_unitario − custo_logistico)`. É a mesma base com a qual o gerador calibrou meta e dívida (`caixa_base_estimado`). O custo do estoque é tratado como já pago.
 3. **Preços permitidos:** níveis cujo `margem unitária / preço ≥ margem_minima_percentual`. 3 dos 30 SKUs não têm nenhum nível viável nesta instância e ficam **sem venda** (gene único, 0 unidades).
@@ -12,7 +12,7 @@
 7. **Greedy (incentivos):** lote = 10 cupons de 5% do preço; conversão por cupom `min(0,6; 0,25·elasticidade)`; razão = (unidades extra · margem) / custo do lote; compra só se razão ≥ 1. O gasto do orçamento reduz o caixa final.
 8. **Gap do GA no catálogo completo** é medido contra o *limite superior relaxado* (ótimo ignorando a capacidade), pois o Brute Force não escala para 30 SKUs.
 
-## Questão 2
+## Questão 2:
 1. **Demanda:** `Poisson(λ)`, `λ = base · m^(−e) · comp^γ · choque_demanda · (1+uplift·destaque)` com γ = 0,5 (sensibilidade ao preço relativo do concorrente).
 2. **Três fontes de incerteza:** demanda (log-normal, σ_demanda + Poisson), preço do concorrente (passeio aleatório log-normal, σ_preco_concorrente) e custo logístico (log-normal comum à semana, σ_custo_logistico). Todos com média 1.
 3. **Cenários:** 2.000 para estimar, **outros** 2.000 para calibrar λ e 5.000 **independentes** para validar (seeds distintas: `seed+401/402/403`).
