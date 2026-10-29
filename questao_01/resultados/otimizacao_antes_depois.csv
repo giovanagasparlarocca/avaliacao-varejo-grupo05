@@ -1,0 +1,3 @@
+versao,tempo_s,pico_KiB,fitness_final,speedup
+antes: fitness em laço Python,0.25109039933333105,229.837890625,216931.55114316687,1.0
+depois: fitness vetorizado (NumPy),0.03205047766668182,261.986328125,216931.5511431668,7.834217072975261

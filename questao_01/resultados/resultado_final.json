@@ -1,0 +1,20 @@
+{
+  "grupo": "G05",
+  "id_instancia": "0f71f458126e",
+  "seed_usada": 5010,
+  "config_ga_principal": "B",
+  "caixa_apos_ga": 430020.7778765003,
+  "caixa_final": 453844.77068135777,
+  "meta_caixa_90d": 285569.78,
+  "divida_total_90d": 304077.37,
+  "meta_atingida": true,
+  "folga_vs_meta": 168274.99068135774,
+  "cobertura_divida_pct": 149.2530571023282,
+  "margem_caixa_sobre_receita_pct": 17.844106200864733,
+  "estoque_remanescente": 385.5749999999997,
+  "orcamento_promocional": 93085.96,
+  "gasto_promocional": 27031.83500000001,
+  "uso_orcamento_pct": 29.039647869560575,
+  "capacidade_politica_unid": 3634.7,
+  "politica_viavel": true
+}

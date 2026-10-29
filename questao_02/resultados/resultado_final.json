@@ -1,0 +1,63 @@
+{
+  "grupo": "G05",
+  "id_instancia": "0f71f458126e",
+  "seed_usada": 5010,
+  "lambda_urgencia": 4.0,
+  "cenarios_estimacao": 2000,
+  "cenarios_validacao": 5000,
+  "skus_representativos": [
+    "Q2-004",
+    "Q2-022",
+    "Q2-002"
+  ],
+  "plano": {
+    "prob_pagamento": {
+      "4": 1.0,
+      "8": 1.0,
+      "12": 1.0
+    },
+    "prob_todas": 1.0,
+    "saldo_final_medio": 196350.70707696496,
+    "saldo_final_percentil_risco": 186721.07960811755,
+    "percentil_risco": 10,
+    "caixa_operacional_medio": 462328.514131615,
+    "custo_promocional_medio": 48509.92705465001,
+    "margem_pct": 25.36611425549228,
+    "estoque_final_medio_un": 235.06,
+    "estoque_final_medio_custo": 159008.134838,
+    "cenarios_falha": 0,
+    "cenarios_total": 5000,
+    "falhas_por_prazo": {
+      "4": 0,
+      "8": 0,
+      "12": 0
+    }
+  },
+  "preco_fixo_referencia": {
+    "prob_pagamento": {
+      "4": 1.0,
+      "8": 1.0,
+      "12": 1.0
+    },
+    "prob_todas": 1.0,
+    "saldo_final_medio": 67410.58139544053,
+    "saldo_final_percentil_risco": 60617.14135794308,
+    "percentil_risco": 10,
+    "caixa_operacional_medio": 284878.4613954405,
+    "custo_promocional_medio": 0.0,
+    "margem_pct": 16.75553561646717,
+    "estoque_final_medio_un": 140.1158,
+    "estoque_final_medio_custo": 100041.74472799999,
+    "cenarios_falha": 0,
+    "cenarios_total": 5000,
+    "falhas_por_prazo": {
+      "4": 0,
+      "8": 0,
+      "12": 0
+    }
+  },
+  "gasto_promocional_semanal_medio": 4042.4939212208337,
+  "orcamento_promocional_semanal": 6954.07,
+  "limite_risco_falha": 0.1,
+  "risco_aceito": true
+}
