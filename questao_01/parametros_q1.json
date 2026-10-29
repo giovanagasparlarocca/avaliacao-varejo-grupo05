@@ -1,0 +1,21 @@
+{
+  "fator_logistico": 1.0,
+  "taxa_carregamento": 0.30,
+  "fator_idade_dias": 180,
+  "cap_frac_politica": 0.95,
+  "cap_frac_total": 1.10,
+  "penalidade_mult": 10,
+  "cupom_pct": 0.05,
+  "lote_cupons": 10,
+  "conv_fator": 0.25,
+  "conv_max": 0.60,
+  "razao_minima": 1.0,
+  "n_subconjunto": 8,
+  "ga_principal": "B",
+  "ga": {
+    "A": {"populacao": 40, "torneio": 3, "p_cruzamento": 0.80, "p_mutacao_gene": 0.01,
+          "elitismo": 1, "max_geracoes": 150, "paciencia": 30, "tolerancia": 1e-9, "vetorizado": true},
+    "B": {"populacao": 150, "torneio": 3, "p_cruzamento": 0.85, "p_mutacao_gene": 0.03,
+          "elitismo": 4, "max_geracoes": 300, "paciencia": 40, "tolerancia": 1e-9, "vetorizado": true}
+  }
+}
